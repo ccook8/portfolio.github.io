@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <title>Calc</title>
+	<meta name="viewport" content="width=device-width,
+	initial-scale=1">
+	<link rel="stylesheet" href="calc.css">
+	<script>
+	function add() {
+		const input1 = parseFloat(document.getElementById('input1').value);
+		const input2 = parseFloat(document.getElementById('input2').value);
+		const add = input1 + input2;
+		document.getElementById('output').innerHTML = add;
+	}
+	function subtract() {
+		let num1 = document.getElementById('input1').value;		
+		let num2 = document.getElementById('input2').value;
+		let resultBox = document.getElementById('output');
+		resultBox.innerHTML = parseFloat(num1) - parseFloat(num2);
+	}
+	function divide() {
+		var num1 = parseFloat(document.getElementById('input1').value);
+		var num2 = parseFloat(document.getElementById('input2').value);
+		if (num2 !== 0) {
+		var divide = num1 / num2;
+		}
+		else {
+		var divide = "Divide by zero"
+		}
+		document.getElementById('output').innerHTML = divide;
+	}
+	function multiply() {
+		let num1 = parseFloat(document.getElementById('input1').value);		
+		let num2 = parseFloat(document.getElementById('input2').value);
+		let resultBox = document.getElementById('output');
+		resultBox.innerHTML =num1 * num2;
+	}
+	</script>
+</head>
+<body>
+	<input type="number" id="input1"><input type="number" id="input2"><br>
+	<button type="button" onclick="add()">+</button> 
+	<button type="button" onclick="subtract()">-</button>
+	<button type="button" onclick="divide()">/</button>
+	<button type="button" onclick="multiply()">x</button>
+	<b>Result:</b> <span id="output"</span><div id="output"></div>
+</body>
+</html>

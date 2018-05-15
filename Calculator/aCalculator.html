@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Calculator</title>
+	<link rel="stylesheet" href="aCalc.css"
+</head>
+<body>
+<!-- Other ways to get the javascript file to come in. Also you would put these tags in the head.
+		<script src="aCalc.js" async></script> This makes the javascript file load at the same time as the rest of the html. This shouldn't be used if another file is dependent on this file being loaded.
+		<script src="aCalc.js" defer></script> This makes sure this file is loaded in last.
+	-->
+<div class="calcBody">
+	
+        <input type="text" id="calcInput" disabled>
+        <div class="calcButtons">
+            <button onclick="calculator.buttonClicked(this)" id="mem" class="span">M</button>
+            <button onclick="calculator.buttonClicked(this)" id="clear" class="span">C</button>
+            <button onclick="calculator.buttonClicked(this)" id="div">/</button>
+            <button onclick="calculator.buttonClicked(this)" id="seven">7</button>
+            <button onclick="calculator.buttonClicked(this)" id="eight">8</button>
+            <button onclick="calculator.buttonClicked(this)" id="nine">9</button>
+            <button onclick="calculator.buttonClicked(this)" id="multiply">X</button>
+            <button onclick="calculator.buttonClicked(this)" id="four">4</button>
+            <button onclick="calculator.buttonClicked(this)" id="five">5</button>
+            <button onclick="calculator.buttonClicked(this)" id="six">6</button>
+            <button onclick="calculator.buttonClicked(this)" id="subtract">-</button>
+            <button onclick="calculator.buttonClicked(this)" id="one">1</button>
+            <button onclick="calculator.buttonClicked(this)" id="two">2</button>
+            <button onclick="calculator.buttonClicked(this)" id="three">3</button>
+            <button onclick="calculator.buttonClicked(this)" id="plus">+</button>
+            <button onclick="calculator.buttonClicked(this)" id="zero" class="span">0</button>
+            <button onclick="calculator.buttonClicked(this)" id="decimal">.</button>
+            <button onclick="calculator.buttonClicked(this)" id="equal">=</button>
+        </div>
+    </div>
+	<script src="aCalc.js"></script>
+
+</body>
+</html>
